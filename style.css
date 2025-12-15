@@ -34,12 +34,12 @@
     body, h1, h2, h3, p, ol, ul{margin:0; padding:0}
     section{background: blue; padding: 100px 0px}
 
-    /* 네온 */
+   
     h2{
       margin: 50px 0px 20px;
       font-size: 3.0rem;
       line-height: 1.5;
-      animation: neon-flicker 0.5s infinite alternate;
+      
 
   font-family: "Teko", sans-serif;
   font-weight: 700;
@@ -49,25 +49,7 @@
 }
 
 
-    @keyframes neon-flicker {
-      0%, 100% {
-        opacity: 1;
-        text-shadow:
-          0 0 1px currentColor,
-          0 0 1px currentColor,
-          0 0 1px currentColor;
-      }
-      40% {
-        opacity: 0.4;
-        text-shadow:
-          0 0 4px currentColor,
-          0 0 8px currentColor;
-      }
-      55% {
-        opacity: 0.4;
-        text-shadow: none;
-      }
-    }
+   
 
 
     p{margin: 10px 0px}
@@ -616,6 +598,7 @@ body { outline: 50px solid red; }
 
 
 </style>
+
 
 
 
