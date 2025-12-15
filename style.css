@@ -119,7 +119,7 @@
         background-position: center center, center 200px, 20% 0, 80% 0;
       }
     }
-    ----------------------------
+    /*----------------------------*/
 
     .bg-dot{
       background: url("./img/dot.jpg");
@@ -257,12 +257,14 @@
       cursor: pointer;
     }
     .bg-header{
-      background: url(./img/helmet.jpg;
+      background: url("./img/helmet.jpg")
       background-size: cover;
       background-position: center;
     }
 
-    header{padding: 350px 0px}
+
+    header{padding: 350px 0px;
+      position:relative;}
     header {
       border-top: 4px dotted white;
       border-bottom: 4px dotted white;
@@ -273,7 +275,7 @@
       color: white;
       text-shadow: 0px 0px 4px white;
       animation: glow 4s infinite alternate cubic-bezier(0, 0.76, 0.16, 1);
-      position: absolute; left: 0px; top: -188px
+      position: relative; left: 0px; top: -188px
     }
     header p{
       font-size: 1rem;
@@ -597,7 +599,6 @@ footer p {
 
 
 </style>
-
 
 
 
