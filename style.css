@@ -4,6 +4,11 @@
         max-width: 100%;
 }
 
+.redbotten,
+.orange,
+.bluee {
+  max-width: 100%;
+}
 
  .overflow-wrap {
   position: relative;
@@ -604,3 +609,4 @@ body { outline: 50px solid red; }
 
 
 </style>
+
