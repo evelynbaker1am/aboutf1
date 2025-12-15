@@ -1,522 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="./style.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600;700&display=swap" rel="stylesheet">
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A visual design project inspired by Formula 1, focusing on speed, strategy, and the dynamics of racing.">
   <title>About F1</title>
-  <style type="text/css">
-    html{
-      font-family: "Noto Serif KR", serif;
-      font-weight: 600;
-      font-size: 30px;
-      line-height: 1.6;
-      word-break: keep-all;
-    }
-
-    img {border-radius: 20px}
-    body, h1, h2, h3, p, ol, ul{margin:0; padding:0}
-    section{background: blue; padding: 100px 0px}
-
-    /* 네온 */
-    h2{
-      margin: 50px 0px 20px;
-      font-size: 3.0rem;
-      line-height: 1.5;
-      animation: neon-flicker 0.5s infinite alternate;
-
-  font-family: "Teko", sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;  
-  text-transform: uppercase;
-}
-
-    }
-
-    @keyframes neon-flicker {
-      0%, 100% {
-        opacity: 1;
-        text-shadow:
-          0 0 1px currentColor,
-          0 0 1px currentColor,
-          0 0 1px currentColor;
-      }
-      40% {
-        opacity: 0.8;
-        text-shadow:
-          0 0 4px currentColor,
-          0 0 8px currentColor;
-      }
-      55% {
-        opacity: 0.4;
-        text-shadow: none;
-      }
-    }
-
-
-    p{margin: 10px 0px}
-    .left-spacing{padding-left: 200px;}
-    .right-spacing{padding-right:200px;}
-
-    .wrap{width: 1100px; margin:auto; position: relative;}
-
-    .bg-darkred{background: darkred;}
-    .softred {
-  color: #E85C5C;
-  font-weight: 700;
-}
-.brightred {
-  color: #D62828;
-  font-weight: 700;
-}
-
-    .bg-warn{
-      background: url("warn.jpg");
-      background-attachment: fixed;
-      background-size: cover;
-    }
-
-    /* 도로 */
-    .bg-road{
-      background-color: #000;   
-      background-image:
-        radial-gradient(ellipse at center,
-          rgba(255,255,255,0.08) 0,
-          rgba(255,255,255,0.02) 35%,
-          rgba(0,0,0,1) 70%),       
-        repeating-linear-gradient(
-          to bottom,
-          transparent 0px,
-          transparent 90px,
-          rgba(255,255,255,0.95) 90px,    
-          rgba(255,255,255,0.95) 180px,
-          transparent 180px,
-          transparent 200px
-        ),
-        linear-gradient(to bottom, #ff3333 0%, #ff3333 100%),          linear-gradient(to bottom, #ff3333 0%, #ff3333 100%);  
-      background-size:
-        100% 100%,  
-        6px 200px,   
-        4px 100%,   
-        4px 100%;    
-      background-repeat:
-        no-repeat,
-        repeat-y,
-        no-repeat,
-        no-repeat;
-      background-position:
-        center center,
-        center 0,
-        20% 0,      
-        80% 0;     
-      background-attachment: fixed;
-      animation: roadStripe 0.3s linear infinite;
-    }
-
-    @keyframes roadStripe {
-      0% {
-        background-position: center center, center 0, 20% 0, 80% 0;
-      }
-      100% {
-        background-position: center center, center 200px, 20% 0, 80% 0;
-      }
-    }
-    ----------------------------
-
-    .bg-dot{
-      background: url("dot.jpg");
-      background-attachment: fixed;
-      background-size: cover;
-    }
-    .bg-fast{
-      background: url("fast.gif");
-      background-attachment: fixed;
-      background-size: cover;
-      border: 4px dashed darkred;
-      padding: 40px;
-      box-sizing: border-box;
-    }
-    .bg-white2{
-      background: url("white.gif");
-      background-attachment: fixed;
-      background-size: cover;
-    }
-
-    .bg-redred{
-      background: url("redred.gif");
-      background-attachment: fixed;
-      background-size: cover;
-    }
-    .bg-ooo{
-      background: url("ooo.gif");
-      background-attachment: fixed;
-      background-size: cover;
-    }
-    .bg-dia{
-      background: url("dia.jpg");
-      background-attachment: fixed;
-      background-size: cover;
-    }
-    .bg-whiteblack{
-      background: url("whiteblack.jpg");
-      background-attachment: fixed;
-      background-size: cover;
-    }
-    .bg-two{
-      background: url("two.gif");
-      background-attachment: fixed;
-      background-size: cover;
-    }
-    .bg-earth{
-      background: url("earth.gif");
-      background-attachment: fixed;
-      background-size: 500px;
-    }
-    .bg-weel{
-      background: url("weel.gif");
-      background-attachment: fixed;
-      background-size: 500px;
-      border: 4px dashed darkred;
-      padding: 40px;
-      box-sizing: border-box;
-      background-color: darkred;      
-  background-blend-mode: multiply;
-    }
-    .bg-ready{
-      background: url("ready.gif");
-      background-attachment: fixed;
-      background-size: cover;
-    }
-    .bg-car{
-      background: url("car.gif");
-      background-attachment: fixed;
-      background-size: cover;
-    }
-    .bg-car2{
-      background: url("car2.gif");
-      background-attachment: fixed;
-      background-size: 500px;
-    }
-    .bg-cool{
-      background: url("cool.gif");
-      background-attachment: fixed;
-      background-size: 400px;
-    }
-    .bg-boom{
-      background: url("boom.gif");
-      background-attachment: fixed;
-      background-size: 1000px;
-    }
-    .bg-black2{
-      background: url("black.gif");
-      background-attachment: fixed;
-      background-size: 300px;
-    }
-    .bg-white{background: white;border: 6px dotted black;}
-    .bg-black{background: black;border: 6px dotted black; }
-    .bg-red{background: darkred;border: 6px ; }
-    .white{color: white;}
-    .darkred{color: darkred;}
-
-    .img-large{ width: 90%;  margin: 0 auto;display: block;}
-    .img-medium{width: 60%;margin: 0 auto;display: block;}
-    .img-small{width: 40%;margin: 0 auto;display: block;}
-
-    .gif-area{
-      position: relative;
-      width: 100%;
-      height: 400px;
-    }
-
-    body {
-      background: #000;      
-      background-size: cover;
-      background-attachment: fixed;
-      margin: 0;
-      border-left: 15px solid darkred;
-      border-right: 15px solid darkred;
-      user-select: none;
-    }
-
-    img{width: 100%}
-    .flex{display: flex; justify-content: space-between;}
-    ul,il{list-style: none;}
-    ul li a{
-      text-decoration: none;
-      display: block;
-      padding: 8px 12px;
-      color:white;
-    }
-    ul li a:hover{
-      background: white;
-      color: black;
-      transition: all 1s;
-    }
-    .logo{position: relative;}
-    .logo h1{
-      color: white;
-      font-size: 1rem;
-      padding: 8px 12px;
-      cursor: pointer;
-    }
-    .bg-header{
-      background: url(helmet.jpg);
-      background-size: cover;
-      background-position: center;
-    }
-
-    header{padding: 350px 0px}
-    header {
-      border-top: 4px dotted white;
-      border-bottom: 4px dotted white;
-    }
-
-    header h1{
-      font-size: 2.5rem;
-      color: white;
-      text-shadow: 0px 0px 4px white;
-      animation: glow 4s infinite alternate cubic-bezier(0, 0.76, 0.16, 1);
-      position: absolute; left: 0px; top: -188px
-    }
-    header p{
-      font-size: 1rem;
-      color: white;
-      text-shadow: 0px 0px 4px white;
-      animation: glow 4s infinite alternate cubic-bezier(0, 0.76, 0.16, 1);
-    }
-
-    @keyframes glow{
-      from{text-shadow: 0px 0px 0px white;}
-      to{text-shadow: 0px 0px 13px white;}
-    }
-
-    .big{
-      font-size: 15rem;
-      color: white;
-      position: absolute;
-      left: 0px; top: 0px
-    }
-
-    .container {position: relative;width: 50%;}
-    .center-text {text-align: center;}
-
-    .image {display: block;width: 100%;height: auto;}
-
-    .overlay {
-      position: absolute; top: 0;bottom: 0;left: 0;right: 0;
-      height: 100%;width: 100%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: #000;
-    }
-
-    .container:hover .overlay { opacity: 1; }
-
-    .text {
-      color: darkred;
-      font-size: 50px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-    }
-
-    .ani {
-      width: 350px;
-      height: 70px;
-      position: relative;
-      animation-name: myAnimation;
-      animation-duration: 3s;
-      animation-fill-mode: forwards;
-      animation-direction: alternate;
-      animation-iteration-count: infinite;
-    }
-
-    img{border-radius: 0px}
-
-    #img1 { animation-timing-function: linear;   animation-delay: 0s; }
-    #img2 { animation-timing-function: ease;     animation-delay: 0.4s; }
-    #img3 { animation-timing-function: ease-in;  animation-delay: 0.8s; }
-    #img4 { animation-timing-function: ease-out; animation-delay: 1.2s; }
-
-    @keyframes myAnimation {
-      from { left: -500px; }
-      to { left: 500px; }
-    }
-
-    .ani-img {
-      width: 400px;
-      height: 80px;
-      position: relative;
-      background-size: cover;
-      background-position: center;
-      animation: moveChange 2s infinite linear;
-    }
-
-    @keyframes moveChange {
-      0% {
-        left: -1000px; top: 100px;
-        background-image: url('orange.png');
-      }
-      25% {
-        left: 2000px; top: 100px;
-        background-image: url('orange.png');
-      }
-      50% {
-        left: 2000px; top: 600px;
-        background-image: url('orange.png');
-      }
-      75% {
-        left: -1000px; top: 600px;
-        background-image: url('orange.png');
-      }
-      100% {
-        left: -1000px; top: 0px;
-        background-image: url('orange.png');
-      }
-    }
-
-    .fade-img { opacity: 0.3; }
-    .section-line { border-bottom: 6px solid darkred; }
-
-    /* 포지션 이미지 */
-    .reed{
-      position: relative;
-      top: 180px;
-      left: 20px;
-      width: 1000px;
-      height: 180px;
-      z-index: 999;
-
-      animation: reedMove 0.6s linear infinite alternate;
-    }
-
-    @keyframes reedMove {
-  0% {
-    transform: translateX(-1000px);
-  }
-  100% {
-    transform: translateX(1000px);
-  }
-}
-
-
-
-
-    .redbotten{
-      position: absolute;
-      top: 1730px;
-      left: 0px;
-      width: 2110px;
-      height: 400px;
-      z-index: 999;
-    }
-
-    .dotflag{
-      position: absolute;
-      top: 2550px;
-      left: 300px;
-      width: 800px;
-      z-index: 999;
-    }
-
-    .dotflag2{
-      position: absolute;
-      top: 3850px;
-      left: 900px;
-      width: 930px;
-      z-index: 999;
-    }
-
-
-    .orange{
-      position: absolute;
-      top: 2550px;
-      left: 300px;
-      width: 800px;
-      z-index: 999;
-    }
-
-    .bluee{
-      position: absolute;
-      top: 3850px;
-      left: 900px;
-      width: 930px;
-      z-index: 999;
-    }
-
-    .redwheel {
-  position: absolute;
-  width: 150px;
-
-  animation: spin 0.2s linear infinite,
-             moveWheel 4s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-
-@keyframes moveWheel {
-  0%   { left: -200px; top: 1000px; }
-  50%  { left: 1600px; top: 1000px; }  
-  100% { left: -200px; top: 1000px; }  
-}
-
-    .redwheel2 {
-      position: absolute;
-      width: 150px;
-      animation: spin 0.2s linear infinite,
-                 moveWheel2 4s linear infinite;
-    }
-
-    @keyframes moveWheel2 {
-      0%   { left: -200px; top: 530px; }
-      50%  { left: 1600px; top: 530px; }
-      100% { left: -200px; top: 530px; }
-    }
-
-    /* 스크롤 */
-
-    .scroll-text{
-      animation-name: foldText;
-      animation-duration: 1s;
-      animation-fill-mode: both;
-      animation-timeline: view();
-      animation-range: entry 0% cover 50%;
-    }
-
-    @keyframes foldText {
-      0%{
-        opacity: 0;
-        transform: translateY(40px);
-        letter-spacing: -0.08em;
-        line-height: 0.8;
-        filter: blur(4px);
-      }
-      100%{
-        opacity: 1;
-        transform: translateY(0);
-        letter-spacing: 0;
-        line-height: 1.6;
-        filter: blur(0);
-      }
-    }
-
-
-
-
-  </style>
+  
 </head>
 <body>
   <nav class="bg-black">
     <div class="wrap flex">
       <div class="logo">
-        <h1>f1 pages</h1>
+        <h1 class="">f1 pages</h1>
       </div>
       <ul class="flex">
         <li><a href="#">racing</a></li>
@@ -529,8 +27,10 @@
   </nav>
 
   <header class="bg-header">
-    <div class="wrap">
-      <h1>f1 pages</h1>
+    
+      <h1 class="f1title">About F1</h1>
+
+      <div class="overflow-wrap wrap">
       <p class="scroll-text">The Extreme of Racing, the Limit of Humanity</p>
     </div>
   </header>
@@ -538,7 +38,7 @@
   <section class="bg-road text-center">
     
       
-      <img src="bluee.png" class="bluee">
+      <img src="bluee.png" class="bluee bluee-move">
       <img scr="dotflag.png" class="dotflag">
 
 
@@ -559,7 +59,7 @@
         </section>
         <img src="redbotten.png" class="redbotten">
       
-      <img src="orange.png" class="orange">
+      <img src="orange.png" class="orange orange-move">
       <img scr="dotflag.png" class="dotflag2"
     </section>
     <br><br><br>
@@ -568,7 +68,7 @@
   <section class="bg-road">
     <div class="wrap">
       <section class="bg-road">
-        <h2 class="bg-white darkred center-text">EXTREME FACTS</h2>
+        <h2 class="bg-white darkred center-text" style="padding-top:20px; line-height: 1;">EXTREME FACTS</h2>
         <p class="brightred center-text scroll-text">
           레이스카 내부의 온도는 최대 60도까지 올라가고,<br> 콕핏 안에서 드라이버는 
           2시간 가까이 집중력을 유지해야 한다.<br>여기에 코너마다 5G 이상의 압력이 몸을 짓누른다.
@@ -581,7 +81,7 @@
   <section class="bg-road">
     <div class="wrap">
       <section class="bg-fast">
-        <h2 class="white center-text">Extreme Breaking <br>Vision Loss</h2><br><br>
+        <h2 class="white center-text" style="padding-top:20px">Extreme Breaking <br>Vision Loss</h2><br><br>
         <p class="white center-text scroll-text">
           F1 드라이버는 시속 300km 이상에서 브레이크를 밟을 때 약 5~6G의 강한 감속을 견딘다.<br> 
           이때 혈액이 순간적으로 앞으로 쏠리면서 시야가 좁아지거나 흐려지는 ‘터널 비전’ 현상이 발생한다. <br>
@@ -596,7 +96,7 @@
 
   <section class="bg-road">
     <div class="wrap">
-      <h2 class="bg-white darkred center-text">PHYSICS OF SURVIVAL</h2><br>
+      <h2 class="bg-white darkred center-text" style="padding-top:20px">PHYSICS OF SURVIVAL</h2><br>
       <p class="center-text brightred scroll-text">
         F1 드라이버의 몸에는 레이스 내내 극단적인 물리적 힘이 작용한다.
         단순히 빠르게 달리는 것이 아니라,<br> 몸이 견딜 수 있는 한계와의 싸움이다.<br>
@@ -658,7 +158,7 @@
     <div class="wrap">
       <h2></h2>
       <div class="ani-img"></div>
-      <h2 class="bg-white darkred center-text">THE REAL BATTLE BEGINS HERE</h2><br><br><br><br>
+      <h2 class="bg-white darkred center-text " style="padding-top:20px">THE REAL BATTLE BEGINS HERE</h2><br><br><br><br>
     </div>
   </section>
 
@@ -674,7 +174,7 @@
   <section class="bg-road">
     <div class="wrap">
       <div class="ani-img"></div>
-      <h2 class="left-spacing bg-white darkred">ABOUT SURVIVAL</h2>
+      <h2 class="center-text bg-white darkred" style="padding-top:20px">ABOUT SURVIVAL</h2>
     </div>
            
     <p class="white center-text scroll-text">
@@ -684,7 +184,7 @@
     </p>
   </section>
 
-  <h2 class="center-text bg-car2 white">BECOME A SURVIVOR</h2>
+  <h2 class="center-text bg-car2 white" style="padding-top:20px">BECOME A SURVIVOR</h2>
  
   <br><br><br>
   <img src="run.gif" alt="Lose 4 kilos">
@@ -692,7 +192,7 @@
   <section class="bg-road">
     <div class="wrap">
    
-      <h2 class="center-text white bg-car2">LOSE 4 KILOS IN A SINGLE RACE</h2>
+      <h2 class="center-text white bg-car2" style="padding-top:20px">LOSE 4 KILOS IN A SINGLE RACE</h2>
       <br>
       <p class="left-spacing brightred scroll-text">
         레이스카 내부의 온도는 최대 60도까지 올라가고,<br>
@@ -704,13 +204,13 @@
         그 무게만큼 사라진 것은 단순한 수분이 아니라,
         트랙 위에서 버텨낸 시간과 집중, 그리고 생존 그 자체이다.
       </p>
-    <img src="reed.png" class="reed">
+      <img src="reed.png" class="reed reed-move">
     </div>
   </section>
 
   <section class="bg-road">
     <div class="wrap">
-      <h2 class="bg-white darkred center-text">VICTORY STORIES</h2>
+      <h2 class="bg-white darkred center-text" style="padding-top:20px">VICTORY STORIES</h2>
       <br>
 
     
@@ -723,7 +223,7 @@
 
   <section class="bg-weel">
     <div class="wrap">
-      <h2 class="bg-white center-text darkred">INTERESTING THINGS ABOUT F1</h2>
+      <h2 class="bg-white center-text darkred" style="padding-top:20px">INTERESTING THINGS ABOUT F1</h2>
       <br><br>
       <p class="right-spacing white scroll-text">
         F1 드라이버는 시속 300km에서도 책의 문장을 읽을 수 있을 정도로
@@ -744,7 +244,7 @@
 
   <section class="bg-road">
     <div class="wrap">
-      <h2 class="bg-white2 darkred center-text">PIT STOPS · PERFECT SECONDS</h2>
+      <h2 class="bg-white2 darkred center-text" style="padding-top:20px">PIT STOPS · PERFECT SECONDS</h2>
       <br><br><br>
       <p class="right-spacing white scroll-text">
         F1에서 피트스톱은 단순히 타이어만 갈고 나가는 시간이 아니다.<br> 
@@ -759,7 +259,7 @@
 
   <section class="bg-redred">
     <div class="wrap">
-      <h2 class="bg-white2 darkred center-text">TYRE STRATEGY · WHY COLOURS MATTER</h2><br>
+      <h2 class="bg-white2 darkred center-text" style="line-height: 1; padding-top: 20px;">TYRE STRATEGY · WHY COLOURS MATTER</h2><br>
       <p class="left-spacing white scroll-text">
         F1 타이어는 단순히 검은 고무 덩어리가 아니다.<br>  
         어떤 컴파운드를 선택하느냐에 따라, 레이스의 전체 전략이 달라진다.<br>
@@ -791,7 +291,7 @@
 
   <section class="bg-road">
     <div class="wrap">
-      <h2 class="bg-white darkred center-text">F1 팀은 왜 수가 <br>적을 수밖에 없는가?</h2><br><br>
+      <h2 class="bg-white darkred center-text" style="line-height: 1.2; padding-top: 20px;">F1 팀은 왜 수가 <br>적을 수밖에 없는가?</h2><br><br>
     </div>
   </section>
 
@@ -825,8 +325,8 @@
 
   <section class="bg-road">
     <div class="wrap">
-      <h2 class="bg-white darkred center-text">경기 중 요절한 선수</h2>
-      <h3 class="brightred center-text scroll-text">AYRTON SENNA</h3>
+      <h2 class="bg-white darkred center-text" style="padding-top: 20px;">경기 중 요절한 선수</h2><br>
+      <h3 class="bg-boom white center-text scroll-text">AYRTON SENNA</h3><br>
       <p class="center-text brightred scroll-text">
         F1 역사상 가장 위대한 드라이버 중 한 명으로 불리는 아일톤 세나.
         1994년 산마리노 그랑프리 도중 탬부렐로 코너에서의 사고로 세상을 떠났다.<br><br>
@@ -837,8 +337,8 @@
       <br><br><br>
      
 
-      <h2 class="bg-white darkred center-text">경기 중 요절한 선수</h2>
-      <h3 class="brightred center-text scroll-text">ROLAND RATZENBERGER</h3>
+      
+      <h3 class="bg-boom white center-text scroll-text">ROLAND RATZENBERGER</h3><br>
       <p class="center-text brightred scroll-text">
         세나와 같은 주말, 예선에서 프런트윙이 파손된 상태로 고속 주행을 이어가다
         벽과 충돌해 사망한 롤란트 라첸베르거.<br><br>
@@ -860,7 +360,7 @@
         레이싱은 속도의 이야기가 아니다.<br>
         끝까지 버티는, 살아남는 자의 이야기다.
       </h3><br><br>
-      <p class="white center-text">서울과학기술대학교 시각디자인과 25학번 이선진<br>contact: 010-5763-4248<br>email: evelynbaker1am@gmail.com
+      <p class="white center-text">서울과학기술대학교 시각디자인과 25학번 이선진<br>email: evelynbaker1am@gmail.com
       <br>
     </p>
     </div>
@@ -868,3 +368,4 @@
 </footer>
 </body>
 </html>
+
