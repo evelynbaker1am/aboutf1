@@ -4,7 +4,8 @@
         max-width: 100%;
 }
 
-
+body{border-left: 10px solid darkred;
+  border-right: 10px solid darkred;}
 .page{
   width: 100%;
   overflow-x: hidden;
@@ -46,7 +47,7 @@
   letter-spacing: 1px;  
   text-transform: uppercase;
 } 
-}
+
 
 
    
@@ -69,7 +70,7 @@
 }
 
     .bg-warn{
-      background: url("warn.jpg");
+      background: url("./img/warn.jpg");
       background-attachment: fixed;
       background-size: cover;
     }
@@ -119,15 +120,15 @@
         background-position: center center, center 200px, 20% 0, 80% 0;
       }
     }
-    ----------------------------
+    /*----------------------------*/
 
     .bg-dot{
-      background: url("dot.jpg");
+      background: url("./img/dot.jpg");
       background-attachment: fixed;
       background-size: cover;
     }
     .bg-fast{
-      background: url("fast.gif");
+      background: url("./img/fast.gif");
       background-attachment: fixed;
       background-size: cover;
       border: 4px dashed darkred;
@@ -135,43 +136,43 @@
       box-sizing: border-box;
     }
     .bg-white2{
-      background: url("white.gif");
+      background: url("./img/white.gif");
       background-attachment: fixed;
       background-size: cover;
     }
 
     .bg-redred{
-      background: url("redred.gif");
+      background: url("./img/redred.gif");
       background-attachment: fixed;
       background-size: cover;
     }
     .bg-ooo{
-      background: url("ooo.gif");
+      background: url("./img/ooo.gif");
       background-attachment: fixed;
       background-size: cover;
     }
     .bg-dia{
-      background: url("dia.jpg");
+      background: url("./img/dia.jpg");
       background-attachment: fixed;
       background-size: cover;
     }
     .bg-whiteblack{
-      background: url("whiteblack.jpg");
+      background: url("./img/whiteblack.jpg");
       background-attachment: fixed;
       background-size: cover;
     }
     .bg-two{
-      background: url("two.gif");
+      background: url("./img/two.gif");
       background-attachment: fixed;
       background-size: cover;
     }
     .bg-earth{
-      background: url("earth.gif");
+      background: url("./img/earth.gif");
       background-attachment: fixed;
       background-size: 500px;
     }
     .bg-weel{
-      background: url("weel.gif");
+      background: url("./img/weel.gif");
       background-attachment: fixed;
       background-size: 500px;
       border: 4px dashed darkred;
@@ -181,32 +182,32 @@
   background-blend-mode: multiply;
     }
     .bg-ready{
-      background: url("ready.gif");
+      background: url("./img/ready.gif");
       background-attachment: fixed;
       background-size: cover;
     }
     .bg-car{
-      background: url("car.gif");
+      background: url("./img/car.gif");
       background-attachment: fixed;
       background-size: cover;
     }
     .bg-car2{
-      background: url("car2.gif");
+      background: url("./img/car2.gif");
       background-attachment: fixed;
       background-size: 500px;
     }
     .bg-cool{
-      background: url("cool.gif");
+      background: url("./img/cool.gif");
       background-attachment: fixed;
       background-size: 400px;
     }
     .bg-boom{
-      background: url("boom.gif");
+      background: url("./img/boom.gif");
       background-attachment: fixed;
       background-size: 1000px;
     }
     .bg-black2{
-      background: url("black.gif");
+      background: url("./img/black.gif");
       background-attachment: fixed;
       background-size: 300px;
     }
@@ -257,7 +258,7 @@
       cursor: pointer;
     }
     .bg-header{
-      background: url(helmet.jpg);
+      background: url(./img/helmet.jpg;
       background-size: cover;
       background-position: center;
     }
@@ -354,23 +355,23 @@
     @keyframes moveChange {
       0% {
         left: -1000px; top: 10px;
-        background-image: url('orange.png');
+        background-image: url('./img/orange.png');
       }
       25% {
         left: 2000px; top: 10px;
-        background-image: url('orange.png');
+        background-image: url('./img/orange.png');
       }
       50% {
         left: 2000px; top: 500px;
-        background-image: url('orange.png');
+        background-image: url('./img/orange.png');
       }
       75% {
         left: -1000px; top: 500px;
-        background-image: url('orange.png');
+        background-image: url('./img/orange.png');
       }
       100% {
         left: -1000px; top: 10px;
-        background-image: url('orange.png');
+        background-image: url('./img/orange.png');
       }
     }
 
@@ -594,10 +595,10 @@ footer p {
   z-index: 10;
 }
 
-body { outline: 50px solid red; }
 
 
 </style>
+
 
 
 
