@@ -4,6 +4,13 @@
         max-width: 100%;
 }
 
+
+.page{
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
 .redbotten,
 .orange,
 .bluee {
@@ -609,5 +616,6 @@ body { outline: 50px solid red; }
 
 
 </style>
+
 
 
