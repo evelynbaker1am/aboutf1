@@ -4,8 +4,7 @@
         max-width: 100%;
 }
 
-body{border-left: 10px solid darkred;
-  border-right: 10px solid darkred;}
+
 .page{
   width: 100%;
   overflow-x: hidden;
@@ -120,7 +119,7 @@ body{border-left: 10px solid darkred;
         background-position: center center, center 200px, 20% 0, 80% 0;
       }
     }
-    /*----------------------------*/
+    ----------------------------
 
     .bg-dot{
       background: url("./img/dot.jpg");
@@ -598,6 +597,7 @@ footer p {
 
 
 </style>
+
 
 
 
