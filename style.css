@@ -46,6 +46,7 @@
   letter-spacing: 1px;  
   text-transform: uppercase;
 } 
+}
 
 
     @keyframes neon-flicker {
@@ -248,8 +249,7 @@
       background-size: cover;
       background-attachment: fixed;
       margin: 0;
-      border-left: 15px solid darkred;
-      border-right: 15px solid darkred;
+     
       user-select: none;
     }
 
@@ -616,6 +616,7 @@ body { outline: 50px solid red; }
 
 
 </style>
+
 
 
 
