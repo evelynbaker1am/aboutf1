@@ -1,7 +1,10 @@
 <style type="text/css">
     html, body,{
   overflow-x: hidden;
+        max-width: 100%;
 }
+
+
  .overflow-wrap {
   position: relative;
   overflow: hidden;
@@ -598,5 +601,6 @@ footer p {
 }
 
 body { outline: 50px solid red; }
+
 
 </style>
